@@ -3,10 +3,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./header.jsx";
-import Login, {Profile, Setting, user_id} from "./UserComponent.jsx";
+import Login, { Profile, Setting, user_id } from "./UserComponent.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const myName = "Md Raza";
 
   return (
     <>
@@ -15,7 +15,11 @@ function App() {
       <Login />
       <Profile />
       <Setting />
-      <h1>{user_id}</h1>
+      <h1>
+        My name is {myName} and user_id is {user_id}
+      </h1>
+      <h1>{10 + 20}</h1>
+      <button onClick={() => alert("Hello")}>Click</button>
     </>
   );
 }
