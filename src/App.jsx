@@ -7,28 +7,22 @@ import Login, { Profile, Setting, user_id } from "./UserComponent.jsx";
 
 function App() {
   const myName = "Md Raza";
+  let myAge = 20;
+
+  let profile_img = "public\\profile-img.png";
+
+  function sum(a, b) {
+    return a + b;
+  }
 
   return (
     <>
       <Header />
-      <Name />
-      <Login />
-      <Profile />
-      <Setting />
-      <h1>
-        My name is {myName} and user_id is {user_id}
-      </h1>
-      <h1>{10 + 20}</h1>
-      <button onClick={() => alert("Hello")}>Click</button>
+      <p>My name is {myName} and age is {myAge}</p>
+      <p>Sum of a and b is {sum(10, 20)}</p>
+      <input type="text" value={myName} />
+      <img className="profile-image" src={profile_img} alt="Profile" />
     </>
-  );
-}
-
-function Name() {
-  return (
-    <div>
-      <h1>Md Raza</h1>
-    </div>
   );
 }
 
