@@ -15,13 +15,21 @@ function App() {
     return a + b;
   }
 
+  const fruit = (name) => {
+    alert(name);
+  };
+
   return (
     <>
       <Header />
-      <p>My name is {myName} and age is {myAge}</p>
+      <p>
+        My name is {myName} and age is {myAge}
+      </p>
       <p>Sum of a and b is {sum(10, 20)}</p>
       <input type="text" value={myName} />
       <img className="profile-image" src={profile_img} alt="Profile" />
+      <button onClick={() => fruit("Apple")}>Apple</button>
+      <button onClick={() => fruit("Banana")}>Banana</button>
     </>
   );
 }
