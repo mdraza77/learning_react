@@ -8,20 +8,20 @@ import Counter from "./Counter.jsx";
 import User from "./User.jsx";
 
 function App() {
-  const [fruit, setFruit] = useState("Apple");
-  const handleFruit = () => {
-    setFruit("Banana");
-  };
-  const [display, setDisplay] = useState(true);
+  const [count, setCount] = useState(0);
   return (
     <>
-      <p>{fruit}</p>
-      <button onClick={handleFruit}>Change Fruit Name</button>
-      <Counter />
-      {/* {display ? <p>Hi, This is Md Raza</p> : null} */}
-      {/* {display ? <p>Hi, This is Md Raza</p> : <p>Not Available</p>} */}
-      {display ? <User /> : <p>Not Available</p>}
-      <button onClick={() => setDisplay(!display)}>Toggle Display</button>
+      <p>{count}</p>
+      {count == 0 ? (
+        <p>Hi</p>
+      ) : count == 1 ? (
+        <p>Hello</p>
+      ) : count == 2 ? (
+        <p>How are you</p>
+      ) : (
+        <p>Ok</p>
+      )}
+      <button onClick={() => setCount(count + 1)}>Counter</button>
     </>
   );
 }
