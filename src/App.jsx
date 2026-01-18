@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <>
-      <p>{count}</p>
+      {/* <p>{count}</p>
       {count == 0 ? (
         <p>Hi</p>
       ) : count == 1 ? (
@@ -21,7 +21,8 @@ function App() {
       ) : (
         <p>Ok</p>
       )}
-      <button onClick={() => setCount(count + 1)}>Counter</button>
+      <button onClick={() => setCount(count + 1)}>Counter</button> */}
+      <User name="Md Raza" age={20} email="mdraza8297@gmail.com" />
     </>
   );
 }
