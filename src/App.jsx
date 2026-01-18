@@ -9,6 +9,9 @@ import User from "./User.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
+  let name = "Md Raza";
+  let age = 20;
+  let email = "mdraza8297@gmail.com";
   return (
     <>
       {/* <p>{count}</p>
@@ -22,7 +25,7 @@ function App() {
         <p>Ok</p>
       )}
       <button onClick={() => setCount(count + 1)}>Counter</button> */}
-      <User name="Md Raza" age={20} email="mdraza8297@gmail.com" />
+      <User name={name} age={age} email={email} />
     </>
   );
 }
