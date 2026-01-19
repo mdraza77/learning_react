@@ -6,28 +6,12 @@ import Header from "./header.jsx";
 import Login, { Profile, Setting, user_id } from "./UserComponent.jsx";
 import Counter from "./Counter.jsx";
 import User from "./User.jsx";
+import Names from "./Names.jsx";
+import Student from "./Student.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-  let name = "Md Raza";
-  let age = 20;
-  let email = "mdraza8297@gmail.com";
-  return (
-    <>
-      {/* <p>{count}</p>
-      {count == 0 ? (
-        <p>Hi</p>
-      ) : count == 1 ? (
-        <p>Hello</p>
-      ) : count == 2 ? (
-        <p>How are you</p>
-      ) : (
-        <p>Ok</p>
-      )}
-      <button onClick={() => setCount(count + 1)}>Counter</button> */}
-      <User name={name} age={age} email={email} />
-    </>
-  );
+  const [student, setStudent] = useState();
+  return <>{student && <Student name={student} />}</>;
 }
 
 export default App;

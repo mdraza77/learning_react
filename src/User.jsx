@@ -1,14 +1,14 @@
-const User = ({ name, age, email }) => {
+const User = ({ user }) => {
   return (
     <div className="flex justify-center">
       <div className="">
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Name is {name}
+          Name is {user.name}
         </button>
         <p className="text-white bg-slate-600 hover:bg-slate-800">
-          Age is {age}
+          Age is {user.age}
         </p>
-        <p>Email is {email}</p>
+        <p>Email is {user.email}</p>
       </div>
     </div>
   );
