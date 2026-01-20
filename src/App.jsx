@@ -12,6 +12,7 @@ function App() {
       <div className="p-4 bg-blue-500">
         <input
           onChange={(event) => setInput(event.target.value)}
+          value={input}
           className="py-2 px-4 border rounded outline-none"
           type="text"
           placeholder="Enter Name"
@@ -19,7 +20,7 @@ function App() {
         <p className="text-white">{input}</p>
         <button
           className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => setInput()}
+          onClick={() => setInput("")}
         >
           Clear
         </button>
