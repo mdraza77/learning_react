@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import User from "./User.jsx";
+import Skills from "./Skills.jsx";
 
 function App() {
   const [name, setName] = useState();
@@ -11,9 +12,8 @@ function App() {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="p-4 bg-blue-500 rounded">
-        <div></div>
         <form action="" method="get">
-          <input
+          {/* <input
             value={name}
             onChange={(event) => setName(event.target.value)}
             className="py-2 px-4 border rounded outline-none"
@@ -39,7 +39,7 @@ function App() {
             placeholder="Enter Password"
           />
           <p className="text-white">{password}</p>
-          <br /> <br />
+          <br /> <br /> */}
           <div className="flex gap-2">
             <button className="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400">
               Submit
